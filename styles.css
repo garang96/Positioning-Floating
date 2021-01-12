@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Hachi Maru Pop";
+    font-size: 14px;
+}
+
+nav {
+    background-color: rgb(227, 220, 245);
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+}
