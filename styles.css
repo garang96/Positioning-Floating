@@ -1,16 +1,250 @@
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-}
-
-nav {
-    background-color: rgb(227, 220, 245);
-    display: inline-block;
-    height: 50px;
-    width: 100%;
-    text-decoration: none;
-}
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            
+            body {
+                margin: 30px;
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+            
+            nav {
+                background-color: white;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                padding: 15px;
+                border-top: 1px solid rgba(0, 0, 0, 0.11);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            #space {
+                color: rgba(0, 0, 0, 0.726);
+            }
+            
+            #york {
+                color: rgba(0, 0, 0, 0.795);
+                position: relative;
+                left: 30%;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+            #subscribe {
+                color: white;
+                float: right;
+                margin-right: 60px;
+                border: 2px solid rgba(0, 0, 0, 0.349);
+                background-color: rgba(0, 0, 255, 0.678);
+                padding: 10px;
+                border-radius: 5px;
+            }
+            
+            h1 {
+                color: rgba(0, 0, 0, 0.733);
+                position: absolute;
+                top: 70px;
+                left: 20%;
+                width: 40%;
+            }
+            
+            img {
+                margin: 10px;
+            }
+            
+            figcaption {
+                width: 60%;
+                position: relative;
+                left: 11%;
+                font-size: 12px;
+                color: grey;
+                margin-bottom: 25px;
+            }
+            
+            .astronaut {
+                margin-bottom: 80px;
+                position: relative;
+                top: 70px;
+                width: 70%;
+                left: 10%;
+            }
+            
+            #telescope {
+                position: relative;
+                left: 26%;
+                width: 45%;
+                height: 400px;
+            }
+            
+            #telescope-caption {
+                width: 46%;
+                position: relative;
+                left: 27%;
+            }
+            
+            p {
+                margin: 20px;
+                width: 40%;
+                position: relative;
+                left: 30%;
+            }
+            
+            div {
+                position: relative;
+                left: 31.5%;
+                line-height: 30px;
+            }
+            
+            time {
+                font-size: 10px;
+                color: grey;
+            }
+            
+            .author {
+                font-weight: 900;
+                color: black;
+            }
+            
+            h3 {
+                position: relative;
+                left: 31.5%;
+            }
+            
+            .inflation {
+                position: relative;
+                left: 20.5%;
+            }
+            
+            .evidence {
+                position: relative;
+                left: 19%;
+                width: 60%;
+                font-size: 12px;
+                color: grey;
+            }
+            
+            #space-items {
+                position: absolute;
+                left: 19%;
+                width: 60%;
+            }
+            
+            .universe {
+                position: relative;
+                left: 8%;
+                width: 33%;
+                font-size: 11px;
+                top: 120px;
+            }
+            
+            .not-enough {
+                position: relative;
+                left: 25%;
+                width: 32%;
+                font-size: 11px;
+            }
+            
+            .distant-coffee {
+                position: absolute;
+                left: 40%;
+                width: 33%;
+                font-size: 11px;
+                top: 143rem;
+            }
+            
+            .coffee-everywhere {
+                position: absolute;
+                left: 56%;
+                width: 33%;
+                font-size: 11px;
+                top: 143rem;
+            }
+            
+            .still-not-enough {
+                position: absolute;
+                left: 8%;
+                width: 33%;
+                font-size: 11px;
+                top: 158rem;
+            }
+            
+            .inflation2 {
+                position: absolute;
+                left: 25%;
+                width: 33%;
+                font-size: 11px;
+                top: 158rem;
+            }
+            
+            .fluctuation {
+                position: absolute;
+                left: 40%;
+                width: 33%;
+                font-size: 11px;
+                top: 158rem;
+            }
+            
+            .expansion {
+                position: absolute;
+                left: 56%;
+                width: 33%;
+                font-size: 11px;
+                top: 158rem
+            }
+            
+            .author2 {
+                position: relative;
+                top: 17rem;
+                left: 16%;
+                margin-bottom: 270px;
+                margin-top: 50px;
+            }
+            
+            .one-in-ten {
+                position: relative;
+                top: 2rem;
+            }
+            
+            .sign-up {
+                position: relative;
+                bottom: 3rem;
+                left: 65%;
+                border: 2px solid rgba(0, 0, 0, 0.336);
+                padding: 5px;
+            }
+            
+            .cooking {
+                width: 32%;
+                margin-top: 50px;
+            }
+            
+            video {
+                position: relative;
+                left: 30%;
+                margin: 20px;
+                width: 40%;
+                height: 300px;
+            }
+            
+            #create-account {
+                position: relative;
+                left: 32%;
+            }
+            
+            .read-comments {
+                background-color: cornflowerblue;
+                border: 2px solid rgba(0, 0, 0, 0.315);
+                padding: 7px;
+                width: 270px;
+                border-radius: 3px;
+                position: relative;
+                left: 32%;
+                top: 3rem;
+            }
