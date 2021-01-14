@@ -1,250 +1,661 @@
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-                border: 0;
-            }
-            
-            body {
-                margin: 30px;
-                background-color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 14px;
-            }
-            
-            nav {
-                background-color: white;
-                position: fixed;
-                width: 100%;
-                top: 0;
-                padding: 15px;
-                border-top: 1px solid rgba(0, 0, 0, 0.11);
-                border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-            }
-            
-            a {
-                text-decoration: none;
-            }
-            
-            #space {
-                color: rgba(0, 0, 0, 0.726);
-            }
-            
-            #york {
-                color: rgba(0, 0, 0, 0.795);
-                position: relative;
-                left: 30%;
-                font-family: 'Times New Roman', Times, serif;
-            }
-            
-            #subscribe {
-                color: white;
-                float: right;
-                margin-right: 60px;
-                border: 2px solid rgba(0, 0, 0, 0.349);
-                background-color: rgba(0, 0, 255, 0.678);
-                padding: 10px;
-                border-radius: 5px;
-            }
-            
-            h1 {
-                color: rgba(0, 0, 0, 0.733);
-                position: absolute;
-                top: 70px;
-                left: 20%;
-                width: 40%;
-            }
-            
-            img {
-                margin: 10px;
-            }
-            
-            figcaption {
-                width: 60%;
-                position: relative;
-                left: 11%;
-                font-size: 12px;
-                color: grey;
-                margin-bottom: 25px;
-            }
-            
-            .astronaut {
-                margin-bottom: 80px;
-                position: relative;
-                top: 70px;
-                width: 70%;
-                left: 10%;
-            }
-            
-            #telescope {
-                position: relative;
-                left: 26%;
-                width: 45%;
-                height: 400px;
-            }
-            
-            #telescope-caption {
-                width: 46%;
-                position: relative;
-                left: 27%;
-            }
-            
-            p {
-                margin: 20px;
-                width: 40%;
-                position: relative;
-                left: 30%;
-            }
-            
-            div {
-                position: relative;
-                left: 31.5%;
-                line-height: 30px;
-            }
-            
-            time {
-                font-size: 10px;
-                color: grey;
-            }
-            
-            .author {
-                font-weight: 900;
-                color: black;
-            }
-            
-            h3 {
-                position: relative;
-                left: 31.5%;
-            }
-            
-            .inflation {
-                position: relative;
-                left: 20.5%;
-            }
-            
-            .evidence {
-                position: relative;
-                left: 19%;
-                width: 60%;
-                font-size: 12px;
-                color: grey;
-            }
-            
-            #space-items {
-                position: absolute;
-                left: 19%;
-                width: 60%;
-            }
-            
-            .universe {
-                position: relative;
-                left: 8%;
-                width: 33%;
-                font-size: 11px;
-                top: 120px;
-            }
-            
-            .not-enough {
-                position: relative;
-                left: 25%;
-                width: 32%;
-                font-size: 11px;
-            }
-            
-            .distant-coffee {
-                position: absolute;
-                left: 40%;
-                width: 33%;
-                font-size: 11px;
-                top: 143rem;
-            }
-            
-            .coffee-everywhere {
-                position: absolute;
-                left: 56%;
-                width: 33%;
-                font-size: 11px;
-                top: 143rem;
-            }
-            
-            .still-not-enough {
-                position: absolute;
-                left: 8%;
-                width: 33%;
-                font-size: 11px;
-                top: 158rem;
-            }
-            
-            .inflation2 {
-                position: absolute;
-                left: 25%;
-                width: 33%;
-                font-size: 11px;
-                top: 158rem;
-            }
-            
-            .fluctuation {
-                position: absolute;
-                left: 40%;
-                width: 33%;
-                font-size: 11px;
-                top: 158rem;
-            }
-            
-            .expansion {
-                position: absolute;
-                left: 56%;
-                width: 33%;
-                font-size: 11px;
-                top: 158rem
-            }
-            
-            .author2 {
-                position: relative;
-                top: 17rem;
-                left: 16%;
-                margin-bottom: 270px;
-                margin-top: 50px;
-            }
-            
-            .one-in-ten {
-                position: relative;
-                top: 2rem;
-            }
-            
-            .sign-up {
-                position: relative;
-                bottom: 3rem;
-                left: 65%;
-                border: 2px solid rgba(0, 0, 0, 0.336);
-                padding: 5px;
-            }
-            
-            .cooking {
-                width: 32%;
-                margin-top: 50px;
-            }
-            
-            video {
-                position: relative;
-                left: 30%;
-                margin: 20px;
-                width: 40%;
-                height: 300px;
-            }
-            
-            #create-account {
-                position: relative;
-                left: 32%;
-            }
-            
-            .read-comments {
-                background-color: cornflowerblue;
-                border: 2px solid rgba(0, 0, 0, 0.315);
-                padding: 7px;
-                width: 270px;
-                border-radius: 3px;
-                position: relative;
-                left: 32%;
-                top: 3rem;
-            }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+    body {
+        margin: 30px;
+        background-color: white;
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        background-color: beige;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 30px;
+        padding: 20px;
+        left: 0;
+        font-size: 14px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .logo {
+        color: rgba(0, 0, 0, 0.795);
+        width: 180px;
+        height: 40px;
+    }
+    
+    .right-nav-button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: hsla(219, 90%, 23%, 0.643);
+        padding: 7px;
+        border-radius: 3px;
+        color: white;
+    }
+    
+    .right-nav1 {
+        color: rgba(0, 0, 0, 0.651);
+        padding: 12px;
+        position: relative;
+        bottom: 2px;
+    }
+    
+    .right-nav2 {
+        position: absolute;
+        right: 2rem;
+        bottom: .9rem;
+        width: 100px;
+        height: 20px;
+    }
+    
+    .left-nav1 {
+        position: absolute;
+        left: 2rem;
+    }
+    
+    .left-nav2 {
+        position: relative;
+        right: 5rem;
+        width: 30px;
+    }
+    
+    .title-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        width: 40%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        line-height: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+        padding-bottom: 20px;
+        position: relative;
+        left: 25rem;
+    }
+    
+    .icons {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        position: absolute;
+        top: 12rem;
+        left: 27rem;
+    }
+    
+    .fa-facebook {
+        margin-right: 10px;
+    }
+    
+    .fa-envelope-square {
+        margin-left: 10px;
+    }
+    
+    h3 {
+        position: relative;
+        right: 13rem;
+    }
+    
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+    
+    figcaption {
+        width: 70%;
+        font-size: 12px;
+        color: grey;
+        align-self: center;
+    }
+    
+    .astronaut {
+        display: flex;
+        width: 70%;
+        align-self: center;
+        margin-bottom: 5px;
+    }
+    
+    #telescope {
+        width: 45%;
+        height: 350px;
+        margin-bottom: 5px;
+    }
+    
+    #telescope-caption {
+        width: 45%;
+    }
+    
+    .author-div {
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        position: relative;
+        left: 21.5rem;
+        width: 40%;
+    }
+    
+    .datetime {
+        font-size: 10px;
+        color: grey;
+        position: relative;
+        right: 14rem;
+    }
+    
+    .author {
+        font-weight: 900;
+        color: black;
+        position: relative;
+        right: 12.5rem;
+    }
+    
+    .inflation-theory {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        margin-left: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inflation {
+        position: relative;
+        right: 4.5rem;
+    }
+    
+    .evidence {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        right: 15.5rem;
+        top: 3rem;
+        color: grey;
+        font-size: 12px;
+        margin-bottom: 20px;
+        width: 60%;
+    }
+    
+    #the-universe-img {
+        width: 200px;
+    }
+    
+    #distant-coffee-img {
+        width: 200px;
+    }
+    
+    #not-time-img {
+        width: 200px;
+    }
+    
+    #coffee-everywhere-img {
+        width: 200px;
+    }
+    
+    .universe {
+        width: 45%;
+        position: relative;
+        bottom: 3rem;
+        font-size: 11px;
+    }
+    
+    .not-enough {
+        position: relative;
+        bottom: 10rem;
+        left: 13rem;
+        width: 45%;
+        font-size: 11px;
+    }
+    
+    .distant-coffee {
+        width: 45%;
+        position: relative;
+        left: 25rem;
+        bottom: 16rem;
+        font-size: 11px;
+    }
+    
+    .coffee-everywhere {
+        width: 45%;
+        position: relative;
+        left: 38rem;
+        bottom: 22rem;
+        font-size: 11px;
+    }
+    
+    #time-img {
+        width: 200px;
+    }
+    
+    #inflation-img {
+        width: 200px;
+    }
+    
+    #flactuation-img {
+        width: 200px;
+    }
+    
+    #expantion-img {
+        width: 200px;
+    }
+    
+    .space-items-div {
+        position: absolute;
+        top: 140rem;
+    }
+    
+    .still-not-enough {
+        position: relative;
+        bottom: 3rem;
+        left: 18rem;
+        width: 30%;
+        font-size: 11px;
+    }
+    
+    .inflation2 {
+        position: relative;
+        bottom: 9rem;
+        left: 30rem;
+        width: 30%;
+        font-size: 11px;
+    }
+    
+    .fluctuation {
+        position: relative;
+        bottom: 15rem;
+        left: 42rem;
+        width: 30%;
+        font-size: 11px;
+    }
+    
+    .expansion {
+        position: relative;
+        left: 55rem;
+        bottom: 21rem;
+        width: 30%;
+        font-size: 11px;
+    }
+    
+    .author2 {
+        margin-top: 30px;
+        border-top: 2px solid rgba(0, 0, 0, 0.055);
+        padding-top: 20px;
+        margin-bottom: 40px;
+        position: absolute;
+        top: 158rem;
+        left: 21%;
+    }
+    
+    .one-in-ten {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .sign-up {
+        border: 2px solid rgba(0, 0, 0, 0.336);
+        padding: 5px;
+    }
+    
+    .read-comments {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsla(219, 90%, 23%, 0.643);
+        border: 2px solid rgba(0, 0, 0, 0.315);
+        padding: 7px;
+        width: 270px;
+        border-radius: 3px;
+        position: relative;
+        left: 22rem;
+        top: 1rem;
+        color: white;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column
+    }
+    
+    ul li {
+        list-style: none;
+    }
+    
+    .last-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    
+    .last-section p {
+        position: relative;
+        left: .5rem;
+    }
+    
+    .second-last-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p {
+        width: 45%;
+    }
+    
+    .article-version {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        color: grey;
+    }
+    
+    .spirals {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .spirals p {
+        position: relative;
+        left: .5rem;
+    }
+    
+    .video-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .second-last-section p {
+        position: relative;
+        left: .5rem;
+    }
+    
+    iframe {
+        margin: 40px 0 10px 0;
+        width: 45%;
+    }
+    
+    .video-caption {
+        width: 45%;
+        font-size: 12px;
+        color: grey;
+        margin-bottom: 20px;
+    }
+    
+    .cooking-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.253);
+        padding: 20px 2px 0 2px;
+        width: 50rem;
+        position: relative;
+        left: 9.5rem;
+    }
+    
+    .cambridge-mass {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .gets-bigger-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px
+    }
+    
+    .reaching-back-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px
+    }
+    
+    .free-articles {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 20px
+    }
+    
+    .right {
+        float: right;
+        color: rgba(0, 0, 0, 0.637);
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    
+    aside a {
+        color: rgba(0, 0, 0, 0.788);
+        margin-right: 20px;
+        line-height: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+    }
+    
+    aside p {
+        font-size: 16px;
+        font-weight: 1000;
+        margin-bottom: 20px;
+        border-top: 2px solid rgba(0, 0, 0, 0.356);
+        padding-top: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+        padding-bottom: 10px;
+    }
+    
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .space-items1 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .space-items2 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .space-items1 img {
+        width: 100px;
+    }
+    
+    .editors-pick {
+        position: absolute;
+        top: 50rem;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .editors-pick1 {
+        width: 200px;
+        margin: 0 10px 0 10px;
+    }
+    
+    .editors-pick2 {
+        width: 200px;
+        margin: 10px 0;
+    }
+    
+    .editors-pick3 {
+        width: 200px;
+        float: right;
+        margin-top: 10px;
+    }
+    
+    .space-features {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    
+    .space-feature1 {
+        width: 230px;
+        margin: 0 20px 100px 0;
+    }
+    
+    .space-feature2 {
+        width: 230px;
+        margin: 0 20px 100px 0;
+        position: relative;
+        right: 17rem;
+    }
+    
+    .space-feature3 {
+        width: 230px;
+        margin: 0 20px 100px 0;
+        position: relative;
+        bottom: 15.8rem;
+        left: 18rem;
+    }
+    
+    .space-feature4 {
+        width: 230px;
+        margin: 0 10px 100px 0;
+        position: relative;
+        bottom: 13rem;
+    }
+    
+    .space-feature5 {
+        width: 230px;
+        margin: 0 10px 100px 0;
+        position: relative;
+        bottom: 13rem;
+        right: 14rem;
+    }
+    
+    .space-feature6 {
+        width: 230px;
+        margin: 0 10px 20px 0;
+        position: relative;
+        bottom: 28.6rem;
+        left: 18rem;
+    }
+    
+    .sync-calender {
+        position: relative;
+        top: 10rem;
+        right: 18rem;
+        margin: 20px;
+        width: 30%;
+    }
+    
+    .mars-mission {
+        position: relative;
+        bottom: 5rem;
+        left: 17rem;
+        width: 30%;
+    }
+    
+    .dropped-call {
+        position: relative;
+        bottom: 5rem;
+        left: 3rem;
+        width: 30%;
+    }
+    
+    .neptune-spot {
+        position: relative;
+        bottom: 5rem;
+        width: 30%;
+        right: 15rem;
+    }
+    
+    .moon-rocks {
+        position: relative;
+        bottom: 20.5rem;
+        left: 15rem;
+        width: 30%;
+    }
+    
+    .mission-training {
+        position: relative;
+        bottom: 20.5rem;
+        left: 1rem;
+        width: 30%;
+    }
+    
+    .footer-aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+        border-bottom: 1px solid black;
+        padding: 20px;
+        font-size: 11px;
+    }
+    
+    .footer {
+        position: relative;
+        bottom: 20rem;
+    }
